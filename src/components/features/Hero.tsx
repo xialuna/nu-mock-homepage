@@ -21,12 +21,12 @@ const Hero = () => {
                 <span className='text-brand'>Tech-Forward</span> Integrated Solutions for your Brand
               </h1>
               <p className='md:mobile-text-l text-xl'>
-                We are an independent agency, we&#39;;ve grown into one of the Philippines&#39; largest full-suite
+                We are an independent agency, we&#39;ve grown into one of the Philippines&#39; largest full-suite
                 advertising and innovation firms, offering a robust portfolio of technology-driven marketing services.
               </p>
-              <div className='flex'>
-                <Button variant='secondary'>View More</Button>
-                <Button>View More</Button>
+              <div className='flex justify-center gap-4'>
+                <Button className='px-14'>Join Us</Button>
+                <Button variant='secondary'>Learn More</Button>
               </div>
             </div>
           </>
