@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { ContainerScroll } from '../ui/container-scroll-animation'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
+import Button from '../ui/button'
 
 // Lazy load React Modal for better performance
 const Modal = dynamic(() => import('react-modal'), { ssr: false })
@@ -16,13 +17,17 @@ const Hero = () => {
         titleComponent={
           <>
             <div className='flex flex-col gap-7 p-20'>
-              <h1 className='text-mobile-heading-3xl md:text-heading-3xl font-semibold'>
+              <h1 className='text-mobile-heading-3xl font-semibold md:text-heading-3xl'>
                 <span className='text-brand'>Tech-Forward</span> Integrated Solutions for your Brand
               </h1>
               <p className='md:mobile-text-l text-xl'>
                 We are an independent agency, we&#39;;ve grown into one of the Philippines&#39; largest full-suite
                 advertising and innovation firms, offering a robust portfolio of technology-driven marketing services.
               </p>
+              <div className='flex'>
+                <Button variant='secondary'>View More</Button>
+                <Button>View More</Button>
+              </div>
             </div>
           </>
         }
