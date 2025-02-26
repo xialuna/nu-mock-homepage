@@ -30,6 +30,34 @@ export default {
         barlow: ['Barlow', 'sans-serif']
       },
       colors: globalColors,
+      fontSize: {
+        // Text styles (Web)
+        'text-2xl': ['24px', { lineHeight: '32px' }],
+        'text-xl': ['20px', { lineHeight: '28px' }],
+        'text-l': ['16px', { lineHeight: '24px' }],
+        'text-m': ['14px', { lineHeight: '20px' }],
+
+        // Heading styles (Web)
+        'heading-5xl': ['72px', { lineHeight: '80px' }],
+        'heading-4xl': ['64px', { lineHeight: '72px' }],
+        'heading-3xl': ['56px', { lineHeight: '64px' }],
+        'heading-2xl': ['48px', { lineHeight: '56px' }],
+
+        // Text styles (Mobile)
+        'mobile-text-2xl': ['20px', { lineHeight: '28px' }],
+        'mobile-text-xl': ['18px', { lineHeight: '28px' }],
+        'mobile-text-l': ['16px', { lineHeight: '26px' }],
+        'mobile-text-m': ['14px', { lineHeight: '26px' }],
+
+        // Heading styles (Mobile)
+        'mobile-heading-5xl': ['56px', { lineHeight: '64px' }],
+        'mobile-heading-4xl': ['48px', { lineHeight: '56px' }],
+        'mobile-heading-3xl': ['40px', { lineHeight: '48px' }],
+        'mobile-heading-2xl': ['32px', { lineHeight: '40px' }],
+        'mobile-heading-xl': ['28px', { lineHeight: '36px' }],
+        'mobile-heading-l': ['24px', { lineHeight: '36px' }]
+      },
+
       backgroundColor: {
         primary: globalColors.neutral[700],
         secondary: globalColors.neutral[600],
@@ -47,6 +75,10 @@ export default {
       borderColor: {
         brand: globalColors.yellow[400],
         subtle: globalColors.neutral[50]
+      },
+
+      backgroundImage: {
+        'custom-bg': "url('https://nuworks.ph/static/images/bg/BG%20(1).png')"
       }
     }
   },

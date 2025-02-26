@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-barlow text-primary bg-primary;
+    @apply font-barlow text-primary bg-primary bg-custom-bg mx-auto bg-cover bg-fixed bg-center bg-no-repeat px-8 py-8;
   }
 
   h2 {
