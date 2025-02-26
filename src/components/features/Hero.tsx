@@ -20,7 +20,7 @@ const Hero = () => {
               <h1 className='text-mobile-heading-3xl font-semibold md:text-heading-3xl'>
                 <span className='text-brand'>Tech-Forward</span> Integrated Solutions for your Brand
               </h1>
-              <p className='md:mobile-text-l text-xl'>
+              <p className='md:mobile-l text-xl'>
                 We are an independent agency, we&#39;ve grown into one of the Philippines&#39; largest full-suite
                 advertising and innovation firms, offering a robust portfolio of technology-driven marketing services.
               </p>

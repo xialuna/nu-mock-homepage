@@ -44,10 +44,10 @@ export default {
         'heading-2xl': ['48px', { lineHeight: '56px' }],
 
         // Text styles (Mobile)
-        'mobile-text-2xl': ['20px', { lineHeight: '28px' }],
-        'mobile-text-xl': ['18px', { lineHeight: '28px' }],
-        'mobile-text-l': ['16px', { lineHeight: '26px' }],
-        'mobile-text-m': ['14px', { lineHeight: '26px' }],
+        'mobile-2xl': ['20px', { lineHeight: '28px' }],
+        'mobile-xl': ['18px', { lineHeight: '28px' }],
+        'mobile-l': ['16px', { lineHeight: '26px' }],
+        'mobile-m': ['14px', { lineHeight: '26px' }],
 
         // Heading styles (Mobile)
         'mobile-heading-5xl': ['56px', { lineHeight: '64px' }],

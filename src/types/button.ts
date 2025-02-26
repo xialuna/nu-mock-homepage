@@ -1,4 +1,4 @@
-export type ButtonVariant = 'primary' | 'secondary'
+export type ButtonVariant = 'primary' | 'secondary' | 'tertiary'
 
 export interface ButtonProps {
   children: React.ReactNode

@@ -15,7 +15,7 @@ export function Values() {
             title={item.title}
             description={item.description}
             header={item.header}
-            className={item.className}
+            className={item.class}
           />
         ))}
       </BentoGrid>
