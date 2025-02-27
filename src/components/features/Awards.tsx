@@ -7,7 +7,7 @@ import Button from '../ui/button'
 const Awards: React.FC = () => {
   return (
     <div className='m-16 pt-8'>
-      <TitleHeading subtitle='Serving blue-chip clients in 19 growing sectors' title='Our Partners' />
+      <TitleHeading subtitle='We&#39;ve won 75+ awards across multiple categories' title='Our Awards' />
       <PyramidGrid data={awards} />
       <Button variant='secondary' className='mx-auto'>
         View More

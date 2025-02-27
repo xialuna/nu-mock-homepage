@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import Button from './button'
 import { navLinks } from '@/data/navLinks'
+import Image from 'next/image'
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,7 +26,7 @@ export default function NavBar() {
         <div className='flex h-16 items-center justify-between'>
           <div className='flex items-center'>
             <span className='flex items-center space-x-2 text-xl font-bold text-brand'>
-              <img src='spotlight.svg' alt='logo' /> <p>NuWorks</p>
+              <Image src='/spotlight.svg' alt='NuWorks Logo' width={40} height={40} /> <p>NuWorks</p>
             </span>
           </div>
 

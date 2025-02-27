@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../ui/button'
+import Image from 'next/image'
 
 function CTA() {
   return (
@@ -9,10 +10,12 @@ function CTA() {
         style={{ backgroundImage: "url('/NUFooter.png')" }} // ✅ Using inline style for reliability
       >
         {/* Mobile Image (Hidden on Desktop) */}
-        <img
+        <Image
           src='https://nuworks.ph/static/images/NUMobileFooter.png'
-          className='w-full rounded-xl md:hidden'
           alt='be-one'
+          width={300}
+          height={300}
+          className='w-full rounded-xl md:hidden'
         />
 
         {/* Shared Text Content */}
