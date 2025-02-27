@@ -11,7 +11,7 @@ const Card: React.FC<CardProps> = ({ iconSrc, title, description }) => {
         <h3 className='text-mobile-2xl mt-3 font-semibold md:text-2xl'>{title}</h3>
         <p className='text-mobile-m md:text-m mb-4 mt-2'>{description}</p>
       </div>
-      <Button variant='tertiary' icon={<IconArrowRight />}>
+      <Button variant='tertiary' size='medium' icon={<IconArrowRight />}>
         Know More
       </Button>
     </div>

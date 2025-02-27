@@ -19,7 +19,7 @@ export function WorksContainer({ title, description, year, imageUrl }: CaseStudy
       </div>
       <p className='text-mobile-l md:text-l mb-5'>{description}</p>
 
-      <Button variant='tertiary' icon={<IconArrowRight />} className='absolute bottom-5'>
+      <Button variant='tertiary' size='medium' icon={<IconArrowRight />} className='absolute bottom-5'>
         View Case Study
       </Button>
     </div>
