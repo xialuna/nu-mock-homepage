@@ -1,14 +1,14 @@
 import React from 'react'
-import { partners } from '@/data/index' // Import the correct partners data
+import { awards } from '@/data/index' // Import the correct partners data
 import PyramidGrid from '../ui/pyramid-grid'
 import TitleHeading from '../ui/title-heading'
 import Button from '../ui/button'
 
-const Partners: React.FC = () => {
+const Awards: React.FC = () => {
   return (
-    <div className='m-9'>
+    <div className='m-16 pt-8'>
       <TitleHeading subtitle='Serving blue-chip clients in 19 growing sectors' title='Our Partners' />
-      <PyramidGrid data={partners} />
+      <PyramidGrid data={awards} />
       <Button variant='secondary' className='mx-auto'>
         View More
       </Button>
@@ -16,4 +16,4 @@ const Partners: React.FC = () => {
   )
 }
 
-export default Partners
+export default Awards
