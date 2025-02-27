@@ -42,6 +42,7 @@ export default {
         'heading-4xl': ['64px', { lineHeight: '72px' }],
         'heading-3xl': ['56px', { lineHeight: '64px' }],
         'heading-2xl': ['48px', { lineHeight: '56px' }],
+        'heading-xl': ['40px', { lineHeight: '48px' }],
 
         // Text styles (Mobile)
         'mobile-2xl': ['20px', { lineHeight: '28px' }],

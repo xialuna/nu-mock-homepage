@@ -8,6 +8,6 @@
   }
 
   h2 {
-    @apply text-4xl font-semibold;
+    @apply md:text-heading-xl text-mobile-heading-xl font-semibold;
   }
 }
