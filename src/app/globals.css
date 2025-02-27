@@ -12,6 +12,6 @@
   }
 
   .container {
-    @apply mx-auto p-12;
+    @apply mx-auto p-2 md:p-12;
   }
 }

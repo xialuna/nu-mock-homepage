@@ -16,7 +16,7 @@ const Hero = () => {
       <ContainerScroll
         titleComponent={
           <>
-            <div className='flex flex-col gap-7 p-20'>
+            <div className='mt-24 flex flex-col gap-7 pb-0 pt-20 md:mt-0 md:pb-20'>
               <h1 className='text-mobile-heading-3xl font-semibold md:text-heading-3xl'>
                 <span className='text-brand'>Tech-Forward</span> Integrated Solutions for your Brand
               </h1>
@@ -24,7 +24,7 @@ const Hero = () => {
                 We are an independent agency, we&#39;ve grown into one of the Philippines&#39; largest full-suite
                 advertising and innovation firms, offering a robust portfolio of technology-driven marketing services.
               </p>
-              <div className='flex justify-center gap-4'>
+              <div className='flex flex-col justify-center gap-4 md:flex-row'>
                 <Button className='px-14'>Join Us</Button>
                 <Button variant='secondary'>Learn More</Button>
               </div>
@@ -32,7 +32,6 @@ const Hero = () => {
           </>
         }
       >
-        {/* Clickable Image to Open Video Modal */}
         <Image
           src={`/banner.svg`}
           alt='hero'
@@ -49,7 +48,7 @@ const Hero = () => {
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
         contentLabel='Video Modal'
-        className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-75'
+        className='fixed inset-0 flex items-center justify-center bg-primary/75'
         ariaHideApp={false}
       >
         <div className='relative w-full max-w-4xl'>

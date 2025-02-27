@@ -5,7 +5,7 @@ import TitleHeading from '../ui/title-heading'
 
 export function Values() {
   return (
-    <div>
+    <div className='mt-32 md:mt-6'>
       <TitleHeading subtitle='What we value in our company' title='Our Values' className='m-10' />
 
       <BentoGrid className='mx-auto max-w-[60rem] md:auto-rows-[22rem]'>
