@@ -3,7 +3,7 @@ import Button from '../ui/button'
 
 function CTA() {
   return (
-    <div className='container mx-auto px-4'>
+    <div className='container mx-auto px-4 py-24'>
       <div
         className='relative flex min-h-[306px] flex-col items-center justify-center rounded-xl bg-cover bg-center md:flex-row'
         style={{ backgroundImage: "url('/NUFooter.png')" }} // ✅ Using inline style for reliability
