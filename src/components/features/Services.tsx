@@ -6,10 +6,10 @@ import { services } from '@/data/index'
 
 const Services = () => {
   return (
-    <div className='grid grid-cols-1 items-center gap-12 md:grid-cols-[1fr_1.5fr] md:gap-4'>
-      <div>
+    <div className='container grid grid-cols-1 gap-12 md:grid-cols-[1fr_1.5fr] md:gap-4'>
+      <div className='pt-3'>
         <TitleHeading subtitle='View our works that stand out' title='Our Services' className='text-start' />
-        <p className='text-mobile-xl pb-12 pt-5 md:text-xl'>
+        <p className='text-mobile-l md:text-l pb-12 pt-5'>
           NuWorks builds, operates, and deploys digital services to help brands and businesses scale in the digital
           economy. This is made possible through StoryTeching: the process by which we utilize our end-to-end digital
           capabilities in content, commerce, customer experience, performance marketing, app dev, and martech.

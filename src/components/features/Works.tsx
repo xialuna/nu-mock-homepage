@@ -6,7 +6,7 @@ import Button from '../ui/button'
 
 const Works = () => {
   return (
-    <div>
+    <div className='container'>
       <TitleHeading subtitle='View our works that stands out' title='Our Works' className='mb-10 mt-20' />
       <div className='grid grid-cols-1 gap-6 md:grid-cols-3'>
         {works.map((work, index) => (

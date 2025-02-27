@@ -10,4 +10,8 @@
   h2 {
     @apply md:text-heading-xl text-mobile-heading-xl font-semibold;
   }
+
+  .container {
+    @apply mx-auto p-12;
+  }
 }
