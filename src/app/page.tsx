@@ -6,6 +6,7 @@ import Partners from '@/components/features/Partners'
 import Services from '@/components/features/Services'
 import { Values } from '@/components/features/Values'
 import Works from '@/components/features/Works'
+import Footer from '@/components/ui/footer'
 import NavBar from '@/components/ui/navbar'
 
 export default function Home() {
@@ -40,6 +41,9 @@ export default function Home() {
           <CTA />
         </section>
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
