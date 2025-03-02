@@ -11,24 +11,27 @@ export interface CaseStudyProps {
 
 export function WorksContainer({ title, description, year, imageUrl }: CaseStudyProps) {
   return (
-    <div className='relative h-[400px] overflow-hidden rounded-lg bg-tertiary p-4 transition-all hover:border-[6px] hover:border-brand/15'>
+    <div className='group relative flex flex-col overflow-hidden rounded-lg bg-tertiary p-4 transition-all duration-300 hover:scale-105 hover:border-[6px] hover:border-brand/15'>
       <Image
         src={imageUrl || '/placeholder.svg'}
         alt={title}
         width={500}
         height={300}
-        className='rounded-lg object-cover'
+        className='w-full rounded-lg object-cover transition-all duration-300 group-hover:scale-105'
       />
 
-      <div className='mb-1 mt-4 flex items-start justify-between'>
-        <h3 className='text-mobile-2xl font-semibold md:text-2xl'>{title}</h3>
-        <span className='text-mobile-xl md:text-xl'>{year}</span>
+      <div className='mt-4 flex flex-col space-y-2'>
+        <div className='flex items-center justify-between'>
+          <h3 className='text-mobile-2xl font-semibold md:text-2xl'>{title}</h3>
+          <span className='text-mobile-xl md:text-xl'>{year}</span>
+        </div>
       </div>
-      <p className='text-mobile-l md:text-l mb-5'>{description}</p>
-
-      <Button variant='tertiary' size='medium' icon={<IconArrowRight />} className='absolute bottom-5'>
-        View Case Study
-      </Button>
+      <p className='md:text-l mb-5 text-mobile-l'>{description}</p>
+      <div className='mt-auto pt-4'>
+        <Button variant='tertiary' size='medium' icon={<IconArrowRight />} className='w-full md:w-auto'>
+          View Case Study
+        </Button>
+      </div>
     </div>
   )
 }
