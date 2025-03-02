@@ -45,10 +45,14 @@ export default function NavBar() {
           </div>
 
           <div className='hidden space-x-3 lg:flex'>
-            <Button variant='secondary' size='small' className='py-0'>
-              Join Us
-            </Button>
-            <Button size='small'>Contact Us</Button>
+            <a href='#cta' onClick={(e) => handleScroll(e, 'cta')}>
+              <Button variant='secondary' size='small' className='py-2'>
+                Join Us
+              </Button>
+            </a>
+            <a href='#cta' onClick={(e) => handleScroll(e, 'cta')}>
+              <Button size='small'>Contact Us</Button>
+            </a>
           </div>
 
           {/* Mobile & Tablet Menu Button */}
@@ -79,10 +83,14 @@ export default function NavBar() {
           ))}
 
           <div className='flex flex-col space-y-2'>
-            <Button variant='secondary' size='small'>
-              Join Us
-            </Button>
-            <Button size='small'>Contact Us</Button>
+            <a href='#cta' onClick={(e) => handleScroll(e, 'cta')}>
+              <Button variant='secondary' size='small'>
+                Join Us
+              </Button>
+            </a>
+            <a href='#cta' onClick={(e) => handleScroll(e, 'cta')}>
+              <Button size='small'>Contact Us</Button>
+            </a>
           </div>
         </div>
       </div>

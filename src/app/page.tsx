@@ -1,4 +1,5 @@
 import Awards from '@/components/features/Awards'
+import Contact from '@/components/features/Contact'
 import CTA from '@/components/features/CTA'
 import Hero from '@/components/features/Hero'
 import Partners from '@/components/features/Partners'
@@ -31,6 +32,9 @@ export default function Home() {
         </section>
         <section id='awards'>
           <Awards />
+        </section>
+        <section>
+          <Contact />
         </section>
         <section id='cta'>
           <CTA />

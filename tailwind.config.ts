@@ -26,6 +26,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        lg: '1080px'
+      },
       fontFamily: {
         barlow: ['Barlow', 'sans-serif']
       },
