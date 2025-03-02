@@ -21,8 +21,8 @@ export default function NavBar() {
   }
 
   return (
-    <nav className='fixed left-0 top-0 z-10 w-full bg-primary/90'>
-      <div className='lg:px-30 mx-auto px-4 sm:px-24'>
+    <nav className='fixed left-0 top-0 z-50 w-full bg-primary/90'>
+      <div className='lg:px-30 mx-auto px-4 sm:px-8 md:px-16'>
         <div className='flex h-16 items-center justify-between'>
           <div className='flex items-center'>
             <span className='flex items-center space-x-2 text-xl font-bold text-brand'>
@@ -31,12 +31,12 @@ export default function NavBar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className='hidden space-x-9 font-semibold md:flex'>
+          <div className='hidden space-x-9 font-semibold lg:flex'>
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                onClick={(e) => handleScroll(e, link.href.substring(2))} // Remove "/" and "#"
+                onClick={(e) => handleScroll(e, link.href.substring(2))}
                 className='cursor-pointer hover:text-brand'
               >
                 {link.label}
@@ -44,15 +44,15 @@ export default function NavBar() {
             ))}
           </div>
 
-          <div className='hidden space-x-3 md:flex'>
+          <div className='hidden space-x-3 lg:flex'>
             <Button variant='secondary' size='small' className='py-0'>
               Join Us
             </Button>
             <Button size='small'>Contact Us</Button>
           </div>
 
-          {/* Mobile Menu */}
-          <div className='flex items-center md:hidden'>
+          {/* Mobile & Tablet Menu Button */}
+          <div className='flex items-center lg:hidden'>
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X className='h-6 w-6' /> : <Menu className='h-6 w-6' />}
             </button>
@@ -60,8 +60,13 @@ export default function NavBar() {
         </div>
       </div>
 
-      {isOpen && (
-        <div className='space-y-7 p-6 md:hidden'>
+      {/* Mobile & Tablet Dropdown Menu */}
+      <div
+        className={`absolute left-0 top-16 w-full bg-primary/95 px-6 py-6 shadow-md transition-all duration-300 ${
+          isOpen ? 'block' : 'hidden'
+        } lg:hidden`}
+      >
+        <div className='space-y-7'>
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -80,7 +85,7 @@ export default function NavBar() {
             <Button size='small'>Contact Us</Button>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   )
 }
